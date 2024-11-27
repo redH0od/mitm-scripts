@@ -1,4 +1,5 @@
 from scapy.all import ARP, Ether, srp
+import socket
 
 def scan_network(network):
     arp_request = ARP(pdst=network)
