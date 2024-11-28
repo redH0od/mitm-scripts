@@ -31,3 +31,4 @@ while True:
         restore_adress(target_ip, host_ip)
         restore_adress(host_ip, target_ip)
         print("Attack has been stopped")
+        break
